@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Card.scss';
+
 export default class Card extends Component {
 
 
@@ -20,66 +22,6 @@ export default class Card extends Component {
         <div className="Card__content">
           <p className="Card__text">{ this.props.content }</p>
         </div>
-        <style jsx>{ `
-          .Card {
-            min-width: 200px;
-            width: 225px;
-            min-height: 300px;
-            margin: 16px;
-          
-            background: #00051a;
-            border-radius: 12px;
-            -moz-border-radius: 12px;
-            -webkit-border-radius: 12px;
-            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
-          
-            transform-origin: center;
-            transform: scale(1) translateZ(0);
-            transition: filter 150ms linear, transform 150ms linear;
-            -webkit-transition: filter 150ms linear, transform 150ms linear;
-            -moz-transition: filter 150ms linear, transform 150ms linear;
-          }
-          
-          .Card:hover {
-            transform: scale(1.10) translateZ(0);
-          }
-          
-          .Card__image-container {
-            padding-top: 24px;
-            display: flex;
-            justify-content: center;
-          }
-          
-          .Card__image {
-            height: 45px;
-            width: 45px;
-          }
-          
-          .Card__header {
-            padding: 16px;
-            margin: 0;
-          }
-          
-          .Card__title {
-            font-size: 25px;
-            color: #f0f0f0;
-            font-weight: bold;
-          }
-          
-          .Card__subtitle {
-            font-size: 15px;
-            color: #ACACAC;
-          }
-          
-          .Card__content {
-            padding: 16px;
-          }
-          
-          .Card__text {
-            color: #f0f0f0;
-          }
-        ` }
-        </style>
       </div>
     );
   }
