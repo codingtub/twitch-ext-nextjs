@@ -1,10 +1,10 @@
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV === 'production';
 const withSass = require('@zeit/next-sass');
 
 module.exports = withSass({
-    assetPrefix: "./",
+    assetPrefix: './',
     env: {
-        STATIC_PREFIX: isProduction ? "./static" : "/static",
+        STATIC_PREFIX: isProduction ? './static' : '/static',
     },
     exportPathMap: async (
         defaultPathMap,
@@ -12,9 +12,9 @@ module.exports = withSass({
     ) => {
         return !dev
             ? {
-                "/video_overlay": {page: "/video_overlay.html"},
-                "/live_config": {page: "/live_config.html"},
-                "/config": {page: "/config.html"},
+                '/video_overlay': {page: '/video_overlay.html'},
+                '/live_config': {page: '/live_config.html'},
+                '/config': {page: '/config.html'},
             }
             : defaultPathMap;
     },

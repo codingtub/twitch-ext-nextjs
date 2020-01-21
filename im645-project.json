@@ -1,7 +1,7 @@
 {
-  "allowHttpBackend": false,
-  "backendCommand": "",
-  "backendFolderName": "",
+  "allowHttpBackend": true,
+  "backendCommand": "npm run start:dev",
+  "backendFolderName": "/Users/mri-private/Workspace/playground/twitch/twitch-ext-backend",
   "certificateExceptions": [],
   "extensionViews": [
     {
