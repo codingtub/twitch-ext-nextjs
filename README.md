@@ -1,8 +1,16 @@
 # twitch-ext-nextjs
 
-Twitch Extension Next.js boilerplate.
+![](twitch-unreal-game.gif)
 
-[Check out this blog post to learn more about how we created this](https://dev.to/djiit/bootstrapping-a-twitch-extension-with-nextjs-3k7d)
+## Description
+
+This repo contains a proof-of-concept implementation of a NextJs Twitch.tv custom extension. This extension captures the viewer's clicks on the video player and send those click events to a simple backend. Further, the extension also presents some cards to the user, however, there is no logic implemented in those cards.
+
+### About the project
+
+It was created as part of an in-game technologies course at my university with the vision to create a game that can be interactively played through a twitch live stream with the means of a custom extension to add further interface capabilities and the ability to directly interact with the game via clicking on the live stream ([the repo for the exension boilerplate](https://github.com/codingtub/twitch-ext-nextjs)). The clicks of the live stream are sent to a custom backend (this repo) and forwarded to the game (([this Unreal Engine 4 project](https://github.com/codingtub/twitch-ext-unreal))). This was done because Twitch extensions don't allow opening WebSckets in the extension directly, which makes a lot of sense regarding security. Those click events were then mapped from 2D Screen coordinates to 3D world space coordinates and used to simply move a player in a top-down setting to move across the screen, pretty great!
+
+Feel free to use this concept for your own ideas and if you ever create an experience similiar to ours please [contact me](mailto:mr@codingtub.eu), I'd be happy to test it!
 
 ## Usage with the Developer Rig
 
